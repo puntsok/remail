@@ -1,0 +1,16 @@
+# ignore log files
+log/*.log
+
+# ignore files and folders in directory
+tmp/**/*
+
+# ignore VIM backup files
+.*.sw*
+
+# ignore Apple finder files
+.DS_Store
+
+# other
+~*
+
+
