@@ -5,6 +5,7 @@ class MessagesController < ApplicationController
   
   def show
     @message = Message.find params[:id]
-    EmailMessage.deliver_sendit( @message )
+    mail = EmailMessage.create_sendit( @message )
+    EmailMessage.deliver(mail)
   end
 end

@@ -17,5 +17,6 @@ config.action_controller.perform_caching             = false
 # chris changed this
 config.action_mailer.raise_delivery_errors = true
 
-ActionMailer::Base.delivery_method = :sendmail
+# ActionMailer::Base.delivery_method = :sendmail
+config.action_mailer.delivery_method = :sendmail
 
