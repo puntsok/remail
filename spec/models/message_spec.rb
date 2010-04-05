@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Message do
   before(:each) do
     @valid_attributes = {
-      
+      :content => "a new message"
     }
   end
 
